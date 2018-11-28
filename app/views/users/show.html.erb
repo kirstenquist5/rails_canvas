@@ -1,0 +1,7 @@
+<%= @user.first_name %> - <%= @user.last_name %>
+
+<%= @user.courses.each do |course| %>
+  <%= link_to course.name, course %>
+<% end %>
+
+<%= link_to 'Delete User', @user, method: :delete %>
